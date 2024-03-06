@@ -10,15 +10,15 @@ function Home() {
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header /> {/* Render the Header component outside the Routes */}
-        <Routes>
-          <Route path="/checkout" element={<h1>Checkout</h1>} />
-          <Route path="/login" element={<h1>Login Page</h1>} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/checkout" element={<h1>Checkout</h1>} />
+        <Route path="/login" element={<h1>Login Page</h1>} />
+        <Route path="/" element={<><Header /><Home /></>} />
+      </Routes>
+    </Router>
+  </div>
+  
   );
 }
 

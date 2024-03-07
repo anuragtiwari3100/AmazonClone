@@ -1,18 +1,68 @@
 import React from 'react';
 import "./Header.css";
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import {Link} from "react-router-dom";
 function Header() {
   return (
     <nav className='header'>
       {/* Logo on the left ->img */}
       <Link to="/login">
-      <img className="header_logo" src="https://zeevector.com/wp-content/uploads/LOGO/Amazon-India-Logo-PNG-White2.png" alt="Amazon Logo" />
-
+      <img className="header__logo" src="https://zeevector.com/wp-content/uploads/LOGO/Amazon-India-Logo-PNG-White2.png" alt="Amazon Logo" />
       </Link>
+
+
+
+
       {/* Search box */}
-      <input type="text" className='header__searchInput'/>
+      <div className='header__search'>
+      <input type="text" className='headerSerach__Input'/>
+      <SearchIcon className="header__searchIcons"/>
+      </div>
+
+
+
+      
       {/* 3 Links */}
-      {/* Basket icon with number */}
+      <div className='header__Nav'>
+        {/* First link */}
+           <Link  to ="/login" className='header__link'>
+            <div className='header_option'>
+            <span className='header__optionLineOne'>Hellow  jee  </span>
+            <span className='header__optionLineTwo'>Sign In  </span>
+            </div>
+           </Link>
+
+        {/* Second Link */}
+        <Link  to ="/" className='header__link'>
+            <div className='header_option'>
+            <span className='header__optionLineOne'> Returns</span>
+            <span className='header__optionLineTwo'>& Orders  ``</span>
+            </div>
+           </Link>
+
+
+       {/* Third link */}
+       <Link  to ="/" className='header__link'>
+            <div className='header_option'>
+            <span className='header__optionLineOne'>Your  </span>
+            <span className='header__optionLineTwo'>Prime</span>
+            </div>
+           </Link>
+      </div>
+     {/* fourth Link */}
+       <Link to="/checkout">
+        <div className='header__optionBasket'>
+          {/* Shopping Basket Icon */}
+     <ShoppingBasketIcon/>
+          {/* Number of Basket In the Basket*/} 
+
+   <span>0</span>
+          
+        </div>
+       </Link>
+        {/* Basket icon with number */}
+
 </nav>
  
   );

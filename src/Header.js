@@ -7,7 +7,7 @@ function Header() {
   return (
     <nav className='header'>
       {/* Logo on the left ->img */}
-      <Link to="/login">
+      <Link to="/">
       <img className="header__logo" src="https://zeevector.com/wp-content/uploads/LOGO/Amazon-India-Logo-PNG-White2.png" alt="Amazon Logo" />
       </Link>
 
@@ -37,7 +37,7 @@ function Header() {
         <Link  to ="/" className='header__link'>
             <div className='header_option'>
             <span className='header__optionLineOne'> Returns</span>
-            <span className='header__optionLineTwo'>& Orders  ``</span>
+            <span className='header__optionLineTwo'>& Orders  </span>
             </div>
            </Link>
 
@@ -50,6 +50,7 @@ function Header() {
             </div>
            </Link>
       </div>
+
      {/* fourth Link */}
        <Link to="/checkout">
         <div className='header__optionBasket'>
@@ -57,8 +58,8 @@ function Header() {
      <ShoppingBasketIcon/>
           {/* Number of Basket In the Basket*/} 
 
-   <span>0</span>
-          
+      <span className="header__optionLineTwo header__basketCount">0</span>
+     
         </div>
        </Link>
         {/* Basket icon with number */}

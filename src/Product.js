@@ -17,7 +17,7 @@ function Product({id, title , image ,price, rating}) {
             .fill()
             .map((_)=>(
                 <p >⭐</p>
-                <img sec=
+                <
 
             ))
         }

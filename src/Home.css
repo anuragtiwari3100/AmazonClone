@@ -7,9 +7,9 @@
 
 
 .home__row{
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  /* flex-wrap: wrap; */
   z-index: 1;
   margin-left: 5px;
   margin-right: 5px;

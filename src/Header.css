@@ -1,91 +1,64 @@
-
 .header{
-   background-color: #232f3e;
-   display:flex;
+   background-color: #131921;
+   display: flex;
    align-items: center;
-    position: sticky;
-    top:0;
-    z-index: 100; 
-
-
-
-}
-   .header__logo{
-    width: 100px; 
-    object-fit: contain;
-    margin-left:20px;
-    margin-right: 20px;
-    margin-top:18px;
+   position: sticky;
+   top: 0;
+   z-index: 100;
    }
-
-
-   .header__optionBasket{
-      display: flex ;
-   color:white;
-       text-decoration: none; 
-       align-items: center;
+   
+   .header-logo{
+       width: 100px;
+       margin:0 20px; 
+       margin-top: 10px;
+       object-fit: contain;
    }
-
-
-   .header__basketCount{
-      margin-left: 10px;
-      margin-right: 10px;
-   }
-
-   .header_option{
-      display:flex;
-      flex-direction: column;
-      margin-left: 10px;
-      margin-right: 10px;
+   .Header-searchIcon{
+       background-color: #cd9042;
+       height: 22px !important;
+       padding: 5px;
    
    }
-
-   .header__Nav{
+   .header_search{
+       display: flex;
+       flex: 1;
+   }
+   .searchInput{
+       height: 12px;
+       padding: 10px;
+       border: none;
+       width: 100%;
+   }
+   .header_nav{
        display: flex;
        justify-content: space-evenly;
-
    }
-
-
-   .header__optionLineOne{
-       font-size: 10px;
-    
-   }
-
-   
-   .header__optionLineTwo{
-            font-size: 13px;
-            font-weight: 800 ;
-   }
-
-
-
-   .header__link{
-      color: white;
+   .header_link{
+       color: white;
        text-decoration: none;
    }
-
-   .header__search{
-      display: flex;
-      flex: 1;
-      
-
+   .header_option{
+       display: flex;
+       flex-direction: column;
+       margin-left: 10px;
+       margin-right: 10px;
    }
-   .headerSerach__Input{
-      height:12px;
-      padding:10px;
-      border:none;
-      width:100%;
+   .header_lineone{
+   
+       font-size: 10px;
    }
-
-
-.header__searchIcons{
-   padding:5px;
-
-   height:22px !important;
-   background-color:#cd9042;
-}
-
-
-
-
+   .header_linetwo{
+       font-size: 13px;
+       font-weight: 800;
+   }
+   .header_optionBasket{
+       display: flex;
+       align-items: center;
+   }
+   .basketCount{
+   margin-left: 10px;
+   margin-right: 10px;
+   }
+   
+   
+   

@@ -1,44 +1,39 @@
-.home{
+.home {
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px; /* Add some padding to the sides */
 }
 
+.home_banner {
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  margin-bottom: -150px;
+  z-index: -1;
+}
 
-.home__row{
-  /* justify-content: space-evenly; */
+.home_row {
   display: flex;
-  /* flex-wrap: wrap; */
   z-index: 1;
   margin-left: 5px;
   margin-right: 5px;
-
-}
-.home__row1 {
-  display: flex;
-  justify-content: space-evenly;
- max-width: 100%;
-  flex-wrap: wrap;
-  width: 100%;
 }
 
-
-
-
-/* Adjust the width of each item based on the screen size */
-.home__row > * {
-  flex: 1 1 300px; /* Set a minimum width of 300px */
-  margin: 10px; /* Add some margin around each item */
+/* Media queries for responsiveness */
+@media only screen and (max-width: 1200px) {
+  .home {
+    padding: 0 20px;
+  }
 }
 
-.home__image{
-  width:100%;
-  height: 50%;
-  background-position: center;
-  height:40vh;
-  mask-image: linear-gradient(to bottom ,rgba(0,0,0,1), rgba(0,0,0,0));
-  z-index: -1;
-  margin-bottom: -150px;
+@media only screen and (max-width: 900px) {
+  .home_row {
+    flex-wrap: wrap;
+  }
 }
 
+@media only screen and (max-width: 600px) {
+  .home_row {
+    flex-direction: column;
+    align-items: center;
+  }
+}

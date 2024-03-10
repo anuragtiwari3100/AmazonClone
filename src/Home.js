@@ -45,12 +45,12 @@ function Home() {
         </div>
 
         <div className="home_row">
-            <Product
-                id="12345"
-                title="Kitchen Stand full stainless"
-                price={45}
+        <Product
+                 id="7"
+                title="FURNATO Home Decor | UV Coated MDF Board Laminated of Mona Lisa Picture Painting Digital Reprint 12 inch x 18 inch Painting  (With Frame)"
+                price={30}
                 rating={4}
-                image="https://m.media-amazon.com/images/I/61Nii21Mf8L._AC_UL480_FMwebp_QL65_.jpg"
+                image="https://rukminim2.flixcart.com/image/612/612/xif0q/painting/3/j/1/10-1-moli-er-enterprises-original-imagvjrjnuctgydv.jpeg?q=70"
             />
          </div>
 
@@ -73,18 +73,19 @@ function Home() {
       
 
             <Product
-                 id="9"
-                title="Cello Aspro Mavro Ball Pen Set (Bulk Pack of 50 Pens with Stand)"
-                price={320}
-                rating={3}
-                image="https://m.media-amazon.com/images/I/71JtFbZl5oL._AC_UL480_FMwebp_QL65_.jpg"
-            />
-             <Product
-                 id="10"
-                title="cello Pens"
-                price={300}
+                id="5"
+                title="Srimad Bhagavad Gita As It Is : HINDI-2018- New Edition (Hardcover, Hindi, A. C. Bhaktivedanta Swami Prabhupada,ISKCON)  (HARD BOUND, Hindi, His Divine Grace A. C. Bhaktivedanta Swami Prabhupada)"
+                price={30}
                 rating={4}
-                image="https://m.media-amazon.com/images/I/51bZXSD0tRL.jpg"
+                image="https://rukminim2.flixcart.com/image/416/416/jyyqc280/regionalbooks/y/6/3/srimad-bhagavad-gita-as-it-is-hindi-2018-new-edition-hardcover-original-imaf79gzwhhey4zz.jpeg?q=70&crop=false"
+            />
+             <Product className="abhi"
+                 id="10"
+                title="The Ramayana is one of the two popular epics of India, the other being the Mahabharata"
+                rating={4}
+                price={300}
+               
+                image="https://rukminim2.flixcart.com/image/416/416/k6xxua80/book/5/6/7/ramayana-original-imafpab5ezyvmztc.jpeg?q=70&crop=false"
             />
 
 

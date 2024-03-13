@@ -3,15 +3,16 @@ import"./Header.css";
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import {Link} from "react-router-dom";
-import {useStateValue} from './StateProvider';
-
+import {useStateValue} from './StateProvider'; 
+     
 function Header() {
- const [{basket},dispatch ]= useStateValue();
+ const [{basket},dispatch ]= useStateValue();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
  console.log(basket);
    
     return (
         <nav className="header ">
-           <Link to="/ "> <img className="header-logo" alt="" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEA
+           <Link to="/ ">
+             <img className="header-logo" alt="" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEA
            AkGBxASEhUQExAVFhUXFRcVFhYVFxUXFRUVFRgWFhYYGRYYHSggGxolGxUXIjIhJSkrMS8uGB8zODMsNygtLisBCgoKDg0OGxAQGzAlICU3LTE3KzMyLTc1LSs1MCs2Ny0tNy8uNy43Nys1LS0tLSs3NzUtLS0tKy0tLystLS0tLf/AABEIAJUBUgMBIgACEQEDEQH/xAAcAAEAAwEBAQEBAAAAAAAAAAAABgc
            IBQEEAgP/xABQEAABAwICBQUJDAgEBQUAAAABAAIDBBEFIQYHEjFRQWFxgaEIEyIyNXKRsbMUFy
            NCUlV0gpKywdEVMzRDYnOiw1ODk+EkJdLw8URUY8LT/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAMEBQEC/8QAMBEBAAI
@@ -31,15 +32,12 @@ function Header() {
            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
-
            LVxU9YI3RyvEYexpY6NzzZh32Lb2Byyve+ViF7vbks7699DY6SVlbC3ZjnJbI0CzWzAbVxw2hc24tPHLRIVda+6cOwmRxGbJYnDmu7Y9T0GYkREH6Y4jcvpw6gmqJBFDE+R53MY0ud6Byc6/pgeFy1U8dNCLySODGg7s95J5GgAkngFrHQzQ6lw2AQwtBcQO+SkDbkdxJ5G8G7h2oKPwbUlikoBlMV
            ODyPdtvH1WXHapLRdz+z97iDjzRxBva5x9StzHMZp6OF1RUSBkbd5O+53AAZkngFUeMa/GhxFNRbTeR0z9kn6jAbfaQWdoTovFhtP7like9u25+0/Z2rutfxQMslIFEtWWlEuJUfuqSNjHd9ezZZtWs3Zt4xJvmpagxvpt5QrPpU3tHKw+5u/ban6OPaNVeab+Uaz6TN7RysPubv22p+jj2jUGhVm3uiJic
            TY3kbTRgdb5CfWtJLNPdCeVB9Gi+9IgrelcQ9pG8OBHUQts0puxp/hHqCxLT+O3zh61tql8Rvmt9QQQ/XJMWYNVkG12xt6nSxtPYSspFap12eRar/J9vEsqoNCdzaf8Ag6n6
-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
-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
@@ -55,7 +53,8 @@ function Header() {
            EBERAREQEREBERAREQEREHq+mhrZYnB8cjmOG4tNj/uOZfKifSXYmY3hYuCayXizaqPa/wDkjsHdbNx6rKcYTj9LUj4GZrj8nxXj6rrFUEv3G4jMb+PBZWo4Rp8u9e7P0X8PEstNp3howrxwvkRcc6pLDtMq+GwbOXNHxZPDHpdmOoqTUGs52QmpgeeN1j9l35rIy8E1NP7c8/Zo04nht8Wyc1GC0j
            /HpoT0sbf0gLnzaF4c7P3K0ea6RvYHWXw02sOgd4xkj85l+1hK6kOlmHu3Vcf1rt+8AoJxcQxfN7pu3pcny+znv1f4cf3bx0SO/Ffj3vMP+TJ/qH8l3WY3SO3VMJ/zGfmv0cXpR/6iL/UZ+a8/xOujbnb3d/Q0vlX2cSPV/hw/dPPTI78F9UGhuHM3UrT5zpHdjnEL6pNJKFu+ri+2D6rrnVOneHM3Tl3ms
            ee0gBe4txHJtHb93ma6Sny+zs02FU0fiU8TehjQfTZfYB/4UDrNZkIHwVNI48XlrB/TcqOYhrDrpLhhZEP4G3d9p1+xS04VrMvxzy9ZR21+mx7V39IW3UVDI27b3ta0criAPSVEcY1iUsV2wgzP4jwYwfOOZ6h1qrayulmO1LI954vcXevcvkWng4Jipvknte0KObimS21I5O7julNVVZSSWZfKNng
-           s6/ldJXDJXiLYpStK9mscoZtr2tPO08071ZQRxmaulcGsibsAnkL8zlxsLfWK4el2kDqybvlrRt8GNp3hvKT/ABHeVwgV4VDXT1jNOad56ekJJzz+nGOOn+wrxEVhCIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAvV4iAiIgIiIPbrxEQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQf/9k="></img></Link>
+           s6/ldJXDJXiLYpStK9mscoZtr2tPO08071ZQRxmaulcGsibsAnkL8zlxsLfWK4el2kDqybvlrRt8GNp3hvKT/ABHeVwgV4VDXT1jNOad56ekJJzz+nGOOn+wrxEVhCIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAvV4iAiIgIiIPbrxEQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBE
+           RAREQEREBERAREQf/9k="></img></Link>
         <div className="header_search">
 
             <input type="text" className="searchInput"/>
@@ -100,7 +99,7 @@ function Header() {
           <div className="header_optionBasket">
           <ShoppingBasketIcon/>
     <span className="header_linetwo basketCount">{basket.length}</span>
-    {/* <span className="header_linetwo basketCount">0</span> */}
+    {/* <span className="header_linetwo basketCount">0</span> */}   
 
         </div>
             </Link>

@@ -74,7 +74,7 @@ function Home() {
 
             <Product
                 id="5"
-                title="Srimad Bhagavad Gita As It Is : HINDI-2018- New Edition (Hardcover, Hindi, A. C. Bhaktivedanta Swami Prabhupada,ISKCON)  (HARD BOUND, Hindi, His Divine Grace A. C. Bhaktivedanta Swami Prabhupada)"
+                title="Srimad Bhagavad Gita As It Is : HINDI-2018- New Edition "
                 price={30}
                 rating={4}
                 image="https://rukminim2.flixcart.com/image/416/416/jyyqc280/regionalbooks/y/6/3/srimad-bhagavad-gita-as-it-is-hindi-2018-new-edition-hardcover-original-imaf79gzwhhey4zz.jpeg?q=70&crop=false"
